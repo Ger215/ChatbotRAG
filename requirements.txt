@@ -40,7 +40,6 @@ dill==0.3.6
 distributed==2023.10.1
 docutils==0.20.1
 entrypoints==0.4
-executing==0.8.4
 fastjsonschema==2.18.0
 filelock==3.8.2
 Flask==2.2.5
