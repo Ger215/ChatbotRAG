@@ -64,7 +64,7 @@ Jinja2==3.1.2
 jsonpatch==1.32
 jsonpointer==2.3
 jupyter==1.0.0
-jupyter_client==8.4.2
+jupyter_client==7.4.9
 jupyter_core==6.1.0
 keyring==24.2.0
 kiwisolver==1.4.5
