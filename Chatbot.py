@@ -1,13 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 import getpass
 import os
 import requests
 import tempfile
+from dotenv import load_dotenv  # Import dotenv to load environment variables
 from langchain_community.document_loaders import PyMuPDFLoader
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
@@ -17,6 +15,8 @@ from langchain_core.vectorstores import InMemoryVectorStore
 from langchain_openai import OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import ChatOpenAI
+
+load_dotenv()
 
 if not os.environ.get("OPENAI_API_KEY"):
     os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter OpenAI API Key: ")
@@ -72,4 +72,3 @@ while True:
 
     response = rag_chain.invoke({"input": user_question})
     print(f"AI: {response['answer']}\n")
-
