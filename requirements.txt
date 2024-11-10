@@ -5,7 +5,6 @@ aioitertools==0.11.0
 aiosignal==1.2.0
 alabaster==0.7.13
 altair==5.0.1
-anaconda-client==1.11.0
 anyio==3.7.0
 appdirs==1.4.4
 appnope==0.1.3
